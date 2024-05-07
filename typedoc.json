@@ -1,0 +1,30 @@
+{
+    "name": "TypedocPluginRawContent",
+    "entryPoints": [
+        "src/index.tsx"
+    ],
+    "disableSources": true,
+    "excludeExternals": true,
+    "excludeInternal": true,
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "excludeNotDocumented": true,
+    "excludeNotDocumentedKinds": [
+        "ConstructorSignature"
+    ],
+    "hideGenerator": true,
+    "includeVersion": false,
+    "navigationLinks": {
+        "GitHub": "https://github.com/yookue/typedoc-plugin-raw-content",
+        "Yookue": "https://yookue.com"
+    },
+    "plugin": [
+        "./dist/cjs/index.js"
+    ],
+    "rawHeadEnds": [
+        "<meta name='keywords' content='typedoc, yookue, typedoc-plugin-raw-content'/>"
+    ],
+    "rawFooterEnds": [
+        "<div style='text-align: center'>Copyright &copy; 2024 Yookue Ltd. All rights reserved</div>"
+    ]
+}
