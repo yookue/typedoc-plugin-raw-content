@@ -64,20 +64,20 @@ $ typedoc [TARGET] --plugin @yookue/typedoc-plugin-raw-content
 
 Here are the available options, specified them in `typedoc.json`:
 
-| Render Event      | Option Name          | Value Type |
-|-------------------|----------------------|------------|
-| head.begin        | rawHeadBegins        | string[]   |
-| head.end          | rawHeadEnds          | string[]   |
-| body.begin        | rawBodyBegins        | string[]   |
-| body.end          | rawBodyEnds          | string[]   |
-| content.begin     | rawContentBegins     | string[]   |
-| content.end       | rawContentEnds       | string[]   |
-| sidebar.begin     | rawSidebarBegins     | string[]   |
-| sidebar.end       | rawSidebarEnds       | string[]   |
-| pageSidebar.begin | rawPageSidebarBegins | string[]   |
-| pageSidebar.end   | rawPageSidebarEnds   | string[]   |
-| footer.begin      | rawFooterBegins      | string[]   |
-| footer.end        | rawFooterEnds        | string[]   |
+| Option Name          | Value Type | Render Event      |
+|----------------------|------------|-------------------|
+| rawHeadBegins        | string[]   | head.begin        |
+| rawHeadEnds          | string[]   | head.end          |
+| rawBodyBegins        | string[]   | body.begin        |
+| rawBodyEnds          | string[]   | body.end          |
+| rawContentBegins     | string[]   | content.begin     |
+| rawContentEnds       | string[]   | content.end       |
+| rawSidebarBegins     | string[]   | sidebar.begin     |
+| rawSidebarEnds       | string[]   | sidebar.end       |
+| rawPageSidebarBegins | string[]   | pageSidebar.begin |
+| rawPageSidebarEnds   | string[]   | pageSidebar.end   |
+| rawFooterBegins      | string[]   | footer.begin      |
+| rawFooterEnds        | string[]   | footer.end        |
 
 ## Example
 
