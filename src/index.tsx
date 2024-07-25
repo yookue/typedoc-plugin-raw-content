@@ -15,7 +15,7 @@
  */
 
 
-import {Application, JSX, RendererHooks} from 'typedoc';
+import {Application, DefaultThemeRenderContext, JSX, RendererHooks} from 'typedoc';
 import * as options from './options/declaration';
 
 
@@ -62,9 +62,11 @@ export function load(app: Application) {
         ['comment.afterTags', 'rawCommentAfterTags'],
     ]);
     for (const [event, option] of hooks.entries()) {
-        // @ts-ignore
-        app.renderer.hooks.on(event, (context) => {
-            const values = context.options.getValue(option) as string[];
+        app.renderer.hooks.on(event, (...params) => {
+            if (!params) {
+                return <></>;
+            }
+            const values = params[0].options.getValue(option) as string[];
             return (!values || values.length === 0) ? <></> : <JSX.Raw html={values.join('')}/>;
         });
     }

@@ -1,6 +1,6 @@
 {
     "name": "@yookue/typedoc-plugin-raw-content",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "title": "TypedocPluginRawContent",
     "description": "Generates extra raw html contents during typedoc compilation",
     "homepage": "https://yookue.github.io/typedoc-plugin-raw-content",
