@@ -101,3 +101,17 @@ export const rawFooterEnds: DeclarationOption = {
     type: ParameterType.Array,
     help: 'Raw html content on footer end',
 };
+
+
+export const rawCommentBeforeTags: DeclarationOption = {
+    name: 'rawCommentBeforeTags',
+    type: ParameterType.Array,
+    help: 'Raw html content before comment tag',
+};
+
+
+export const rawCommentAfterTags: DeclarationOption = {
+    name: 'rawCommentAfterTags',
+    type: ParameterType.Array,
+    help: 'Raw html content after comment tag',
+};

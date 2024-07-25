@@ -58,9 +58,12 @@ export function load(app: Application) {
         ['pageSidebar.end', 'rawPageSidebarEnds'],
         ['footer.begin', 'rawFooterBegins'],
         ['footer.end', 'rawFooterEnds'],
+        ['comment.beforeTags', 'rawCommentBeforeTags'],
+        ['comment.afterTags', 'rawCommentAfterTags'],
     ]);
     for (const [event, option] of hooks.entries()) {
-        app.renderer.hooks.on(event, (context): JSX.Element => {
+        // @ts-ignore
+        app.renderer.hooks.on(event, (context) => {
             const values = context.options.getValue(option) as string[];
             return (!values || values.length === 0) ? <></> : <JSX.Raw html={values.join('')}/>;
         });

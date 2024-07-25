@@ -32,6 +32,10 @@
 
 ✅ Support hooking `footer.end` event
 
+✅ Support hooking `comment.beforeTags` event
+
+✅ Support hooking `comment.afterTags` event
+
 ## Quickstart
 
 You can install this package in your typescript project as follows:
@@ -64,20 +68,22 @@ $ typedoc [TARGET] --plugin @yookue/typedoc-plugin-raw-content
 
 Here are the available options, specified them in `typedoc.json`:
 
-| Option Name          | Value Type | Render Event      |
-|----------------------|------------|-------------------|
-| rawHeadBegins        | string[]   | head.begin        |
-| rawHeadEnds          | string[]   | head.end          |
-| rawBodyBegins        | string[]   | body.begin        |
-| rawBodyEnds          | string[]   | body.end          |
-| rawContentBegins     | string[]   | content.begin     |
-| rawContentEnds       | string[]   | content.end       |
-| rawSidebarBegins     | string[]   | sidebar.begin     |
-| rawSidebarEnds       | string[]   | sidebar.end       |
-| rawPageSidebarBegins | string[]   | pageSidebar.begin |
-| rawPageSidebarEnds   | string[]   | pageSidebar.end   |
-| rawFooterBegins      | string[]   | footer.begin      |
-| rawFooterEnds        | string[]   | footer.end        |
+| Option Name          | Value Type | Render Event       |
+|----------------------|------------|--------------------|
+| rawHeadBegins        | string[]   | head.begin         |
+| rawHeadEnds          | string[]   | head.end           |
+| rawBodyBegins        | string[]   | body.begin         |
+| rawBodyEnds          | string[]   | body.end           |
+| rawContentBegins     | string[]   | content.begin      |
+| rawContentEnds       | string[]   | content.end        |
+| rawSidebarBegins     | string[]   | sidebar.begin      |
+| rawSidebarEnds       | string[]   | sidebar.end        |
+| rawPageSidebarBegins | string[]   | pageSidebar.begin  |
+| rawPageSidebarEnds   | string[]   | pageSidebar.end    |
+| rawFooterBegins      | string[]   | footer.begin       |
+| rawFooterEnds        | string[]   | footer.end         |
+| rawCommentBeforeTags | string[]   | comment.beforeTags |
+| rawCommentAfterTags  | string[]   | comment.afterTags  |
 
 ## Example
 
