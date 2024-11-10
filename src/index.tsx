@@ -15,8 +15,8 @@
  */
 
 
-import {Application, DefaultThemeRenderContext, JSX, RendererHooks} from 'typedoc';
-import * as options from './options/declaration';
+import {Application, JSX, RendererHooks} from 'typedoc';
+import * as options from './declare/options';
 
 
 /**
@@ -67,7 +67,7 @@ export function load(app: Application) {
                 return <></>;
             }
             const values = params[0].options.getValue(option) as string[];
-            return (!values || values.length === 0) ? <></> : <JSX.Raw html={values.join('')}/>;
+            return (!values || values.length === 0) ? <></> : <JSX.Raw html={values.join()}/>;
         });
     }
 }

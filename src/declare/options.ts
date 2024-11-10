@@ -15,8 +15,14 @@
  */
 
 
-
 import {ParameterType, type DeclarationOption} from 'typedoc';
+
+
+/**
+ * Options of raw content plugin for typedoc
+ *
+ * @author David Hsing
+ */
 
 
 export const rawHeadBegins: DeclarationOption = {
