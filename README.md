@@ -104,6 +104,10 @@ Other options are all similar to the sample above.
 
 - GitHub pages: [https://yookue.github.io/typedoc-plugin-raw-content](https://yookue.github.io/typedoc-plugin-raw-content)
 
+## Copyright
+
+Beijing Yookue Network Technology Ltd.
+
 ## License
 
 This project is under the [MIT License](https://mit-license.org/).

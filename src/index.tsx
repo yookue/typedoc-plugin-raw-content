@@ -16,7 +16,7 @@
 
 
 import {Application, JSX, RendererHooks} from 'typedoc';
-import * as options from './declare/options';
+import * as options from './declare/options.js';
 
 
 /**
@@ -62,7 +62,7 @@ export function load(app: Application) {
         ['comment.afterTags', 'rawCommentAfterTags'],
     ]);
     for (const [event, option] of hooks.entries()) {
-        app.renderer.hooks.on(event, (...params) => {
+        app.renderer.hooks.on(event, (...params: any[]) => {
             if (!params) {
                 return <></>;
             }

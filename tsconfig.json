@@ -6,16 +6,16 @@
         "jsx": "react",
         "jsxFactory": "JSX.createElement",
         "jsxFragmentFactory": "JSX.Fragment",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "target": "es2015",
-        "lib": ["dom"],
+        "module": "node16",
+        "noImplicitAny": false,
+        "target": "es2022",
+        "lib": ["es2023"],
         "removeComments": true,
         "skipLibCheck": true,
         "strict": true,
     },
     "include": [
-        "src/**/*"
+        "src"
     ],
     "exclude": [
         "node_modules",
