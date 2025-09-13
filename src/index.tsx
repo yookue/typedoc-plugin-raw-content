@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Yookue Ltd. All rights reserved.
+ * Copyright (c) 2024 Unikue Ltd. All rights reserved.
  *
  * Licensed under the MIT License (the 'License')
  *
@@ -41,7 +41,7 @@ export function load(app: Application) {
 
     // Identify plugin generator
     app.renderer.hooks.on('head.end', (): JSX.Element => {
-        return <meta name="typedoc-plugin" content="@yookue/typedoc-plugin-raw-content"/>;
+        return <meta name="typedoc-plugin" content="@unikue/typedoc-plugin-raw-content"/>;
     });
 
     // Hook plugin options

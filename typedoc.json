@@ -19,16 +19,16 @@
     ],
     "includeVersion": false,
     "navigationLinks": {
-        "GitHub": "https://github.com/yookue/typedoc-plugin-raw-content",
-        "Yookue": "https://yookue.com"
+        "GitHub": "https://github.com/unikueltd/typedoc-plugin-raw-content",
+        "Unikue": "https://unikue.cn"
     },
     "plugin": [
         "./dist/lib/index.js"
     ],
     "rawHeadEnds": [
-        "<meta name='keywords' content='typedoc, yookue, typedoc-plugin-raw-content'/>"
+        "<meta name='keywords' content='typedoc, unikue, typedoc-plugin-raw-content'/>"
     ],
     "rawFooterEnds": [
-        "<div style='text-align: center'>Copyright &copy; 2025 Yookue Ltd. All rights reserved</div>"
+        "<div style='text-align: center'>Copyright &copy; 2025 Unikue Ltd. All rights reserved</div>"
     ]
 }

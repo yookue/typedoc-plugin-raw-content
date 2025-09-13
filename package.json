@@ -1,10 +1,10 @@
 {
-    "name": "@yookue/typedoc-plugin-raw-content",
-    "version": "0.3.0",
+    "name": "@unikue/typedoc-plugin-raw-content",
+    "version": "1.0.0",
     "title": "TypedocPluginRawContent",
     "description": "Generates extra raw html contents during typedoc compilation",
-    "homepage": "https://yookue.github.io/typedoc-plugin-raw-content",
-    "organization": "Yookue Ltd",
+    "homepage": "https://unikueltd.github.io/typedoc-plugin-raw-content",
+    "organization": "Unikue Ltd",
     "private": false,
     "license": "MIT",
     "keywords": [
@@ -27,43 +27,43 @@
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3.3.1",
-        "@eslint/js": "^9.24.0",
-        "@types/node": "^18.19.64",
-        "@typescript-eslint/eslint-plugin": "^8.29.0",
+        "@eslint/js": "^9.35.0",
+        "@types/node": "^18.19.124",
+        "@typescript-eslint/eslint-plugin": "^8.43.0",
         "del-cli": "^6.0.0",
         "gh-pages": "^6.3.0",
-        "globals": "^16.0.0",
-        "typedoc": "~0.28.2",
-        "typescript": "^5.8.3"
+        "globals": "^16.4.0",
+        "typedoc": "~0.28.12",
+        "typescript": "^5.9.2"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/yookue/typedoc-plugin-raw-content.git"
+        "url": "git+https://github.com/unikueltd/typedoc-plugin-raw-content.git"
     },
     "bugs": {
-        "url": "https://github.com/yookue/typedoc-plugin-raw-content/issues"
+        "url": "https://github.com/unikueltd/typedoc-plugin-raw-content/issues"
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org/"
     },
     "collective": {
-        "url": "https://opencollective.com/yookue-awesome"
+        "url": "https://opencollective.com/unikue-awesome"
     },
     "funding": [
         {
             "type": "opencollective",
-            "url": "https://opencollective.com/yookue-awesome"
+            "url": "https://opencollective.com/unikue-awesome"
         },
         {
             "type": "individual",
-            "url": "https://yookue.com/public/donate"
+            "url": "https://unikue.cn/public/donate"
         }
     ],
     "author": {
-        "name": "Yookue Ltd",
-        "email": "yookue@outlook.com",
-        "url": "https://yookue.com"
+        "name": "Unikue Ltd",
+        "email": "unikue@yeah.net",
+        "url": "https://unikue.cn"
     },
     "contributors": [
         {
