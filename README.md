@@ -93,7 +93,7 @@ Take `rawFooterEnds` option as an example in `typedoc.json`:
 {
     "hideGenerator": true,
     "rawFooterEnds": [
-        "<div style='text-align: center'>Copyright &copy; 2025 Unikue Ltd. All rights reserved</div>"
+        "<div style='text-align: center'>Copyright &copy; 2026 Unikue Ltd. All rights reserved</div>"
     ]
 }
 ```

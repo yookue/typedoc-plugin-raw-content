@@ -1,38 +1,27 @@
-
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
+// @ts-check
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
 import globals from 'globals';
-import tsParser from '@typescript-eslint/parser';
-import path from 'node:path';
-import {fileURLToPath} from 'node:url';
-import js from '@eslint/js';
-import {FlatCompat} from '@eslint/eslintrc';
 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all,
-});
-
-
-export default [
+export default tseslint.config(
     {
-        ignores: ['src/**/*.test.ts*', 'test/**/*'],
+        ignores: [
+            'src/**/*.test.ts*',
+            'test/**/*',
+            'dist/**/*',
+            'docs-dist/**/*',
+            'node_modules/**/*'
+        ],
     },
-    ...compat.extends('eslint:recommended', 'plugin:@typescript-eslint/recommended'),
+    eslint.configs.recommended,
+    ...tseslint.configs.recommended,
     {
-        plugins: {
-            '@typescript-eslint': typescriptEslint,
-        },
         languageOptions: {
             globals: {
                 ...globals.browser,
                 ...globals.node,
-                ...globals.jest,
             },
-            parser: tsParser,
             ecmaVersion: 'latest',
             sourceType: 'module',
         },
@@ -49,4 +38,4 @@ export default [
             '@typescript-eslint/triple-slash-reference': 'off',
         },
     }
-];
+);
