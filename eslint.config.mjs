@@ -1,10 +1,10 @@
 // @ts-check
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import tslint from 'typescript-eslint';
 import globals from 'globals';
 
 
-export default tseslint.config(
+export default tslint.config(
     {
         ignores: [
             'src/**/*.test.ts*',
@@ -15,7 +15,7 @@ export default tseslint.config(
         ],
     },
     eslint.configs.recommended,
-    ...tseslint.configs.recommended,
+    ...tslint.configs.recommended,
     {
         languageOptions: {
             globals: {

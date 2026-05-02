@@ -36,6 +36,9 @@
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.59.1"
     },
+    "peerDependencies": {
+        "typescript": ">=4"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/unikueltd/typedoc-plugin-raw-content.git"
