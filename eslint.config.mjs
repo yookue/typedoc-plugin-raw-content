@@ -9,6 +9,7 @@ export default tslint.config(
         ignores: [
             'src/**/*.test.ts*',
             'test/**/*',
+            'coverage/**/*',
             'dist/**/*',
             'docs-dist/**/*',
             'node_modules/**/*'
