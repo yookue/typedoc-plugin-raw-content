@@ -15,6 +15,7 @@
         "removeComments": true,
         "skipLibCheck": true,
         "strict": true,
+        "types": ["node"]
     },
     "include": [
         "src"
