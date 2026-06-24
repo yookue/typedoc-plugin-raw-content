@@ -1,6 +1,6 @@
 {
     "name": "@unikue/typedoc-plugin-raw-content",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "title": "TypedocPluginRawContent",
     "description": "Generates extra raw html contents during typedoc compilation",
     "homepage": "https://unikueltd.github.io/typedoc-plugin-raw-content",
@@ -23,18 +23,19 @@
         "build": "del-cli ./dist && tsc --outDir ./dist/lib",
         "docs:build": "typedoc --out ./docs-dist",
         "docs:publish": "gh-pages -d ./docs-dist",
-        "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\""
+        "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+        "upgrade": "npx npm-check-updates --target semver -u"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
-        "@types/node": "^25.6.0",
+        "@types/node": "^25.9.4",
         "del-cli": "^7.0.0",
-        "eslint": "^10.3.0",
+        "eslint": "^10.5.0",
         "gh-pages": "^6.3.0",
-        "globals": "^17.6.0",
+        "globals": "^17.7.0",
         "typedoc": "~0.28.19",
         "typescript": "^6.0.3",
-        "typescript-eslint": "^8.59.1"
+        "typescript-eslint": "^8.62.0"
     },
     "peerDependencies": {
         "typescript": ">=4.0.0"
